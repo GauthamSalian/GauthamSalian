@@ -1,4 +1,7 @@
 <!-- ------------------------------ HEADER ------------------------------ -->
+<p align="center">
+  <img src="assets/gs_logo.svg" width="140" alt="Gautham Salian Logo" />
+</p>
 
 <div align="center">
   
@@ -10,6 +13,24 @@
 <br/>
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=500&size=22&duration=3000&pause=800&color=00C4FF&center=true&vCenter=true&width=500&lines=AI+Engineer+in+Progress;Blockchain+Developer;Hackathon+Finalist;RAG+System+Builder;Full-Stack+Builder" />
+
+</div>
+
+---
+
+<!-- Badge wall: custom palette (cyan → mint → teal) -->
+<div align="center">
+
+
+<img src="https://img.shields.io/badge/AI-Emotion%20Systems-00C4FF?style=for-the-badge&logo=ai" alt="AI" />
+<img src="https://img.shields.io/badge/RAG-FAISS+HF-6FE3B4?style=for-the-badge&logo=huggingface" alt="RAG" />
+<img src="https://img.shields.io/badge/Watsonx-Granite-00A3C4?style=for-the-badge&logo=ibm" alt="Watsonx" />
+<img src="https://img.shields.io/badge/AWS-EC2%20%26%20Lambda-0F1720?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS" />
+<img src="https://img.shields.io/badge/FAISS-Vector%20Search-2C3E50?style=for-the-badge&logo=facebook" alt="FAISS" />
+<img src="https://img.shields.io/badge/Hyperledger%20Besu-Private%20Chains-2F3134?style=for-the-badge&logo=hyperledger" alt="Besu" />
+<img src="https://img.shields.io/badge/Next.js-Frontend-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+<img src="https://img.shields.io/badge/Foundry-Smart%20Testing-FB8A3B?style=for-the-badge&logo=foundry" alt="Foundry" />
+
 
 </div>
 
@@ -122,24 +143,6 @@
   
 ![Stats](https://github-readme-stats.vercel.app/api?username=gauthamsalian&show_icons=true&theme=radical)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=gauthamsalian&theme=radical&layout=compact)
-
-</div>
-
----
-
-<!-- Badge wall: custom palette (cyan → mint → teal) -->
-<div align="center">
-
-
-<img src="https://img.shields.io/badge/AI-Emotion%20Systems-00C4FF?style=for-the-badge&logo=ai" alt="AI" />
-<img src="https://img.shields.io/badge/RAG-FAISS+HF-6FE3B4?style=for-the-badge&logo=huggingface" alt="RAG" />
-<img src="https://img.shields.io/badge/Watsonx-Granite-00A3C4?style=for-the-badge&logo=ibm" alt="Watsonx" />
-<img src="https://img.shields.io/badge/AWS-EC2%20%26%20Lambda-0F1720?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS" />
-<img src="https://img.shields.io/badge/FAISS-Vector%20Search-2C3E50?style=for-the-badge&logo=facebook" alt="FAISS" />
-<img src="https://img.shields.io/badge/Hyperledger%20Besu-Private%20Chains-2F3134?style=for-the-badge&logo=hyperledger" alt="Besu" />
-<img src="https://img.shields.io/badge/Next.js-Frontend-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-<img src="https://img.shields.io/badge/Foundry-Smart%20Testing-FB8A3B?style=for-the-badge&logo=foundry" alt="Foundry" />
-
 
 </div>
 
