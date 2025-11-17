@@ -127,14 +127,19 @@
 
 ---
 
-## 🏆 GitHub Trophies  
+<!-- Badge wall: custom palette (cyan → mint → teal) -->
 <div align="center">
 
-<p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=gauthamsalian&theme=onedark&column=-1" alt="GitHub Trophies" />
-  </a>
-</p>
+
+<img src="https://img.shields.io/badge/AI-Emotion%20Systems-00C4FF?style=for-the-badge&logo=ai" alt="AI" />
+<img src="https://img.shields.io/badge/RAG-FAISS+HF-6FE3B4?style=for-the-badge&logo=huggingface" alt="RAG" />
+<img src="https://img.shields.io/badge/Watsonx-Granite-00A3C4?style=for-the-badge&logo=ibm" alt="Watsonx" />
+<img src="https://img.shields.io/badge/AWS-EC2%20%26%20Lambda-0F1720?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS" />
+<img src="https://img.shields.io/badge/FAISS-Vector%20Search-2C3E50?style=for-the-badge&logo=facebook" alt="FAISS" />
+<img src="https://img.shields.io/badge/Hyperledger%20Besu-Private%20Chains-2F3134?style=for-the-badge&logo=hyperledger" alt="Besu" />
+<img src="https://img.shields.io/badge/Next.js-Frontend-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+<img src="https://img.shields.io/badge/Foundry-Smart%20Testing-FB8A3B?style=for-the-badge&logo=foundry" alt="Foundry" />
+
 
 </div>
 
