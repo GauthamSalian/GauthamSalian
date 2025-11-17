@@ -130,7 +130,11 @@
 ## 🏆 GitHub Trophies  
 <div align="center">
 
-![trophy](https://github-profile-trophy.vercel.app/?username=gauthamsalian&theme=onedark)
+<p align="center">
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy.vercel.app/?username=gauthamsalian&theme=onedark&column=-1" alt="GitHub Trophies" />
+  </a>
+</p>
 
 </div>
 
