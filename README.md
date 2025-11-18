@@ -1,7 +1,8 @@
 <!-- ------------------------------ HEADER ------------------------------ -->
-<p align="center">
-  <img src="assets/gs_logo.svg" width="140" alt="Gautham Salian Logo" />
-</p>
+<div align="center">
+  <img src="./github_neon.svg" alt="SYNTAX ERROR_404" width="100%" />
+</div>
+
 
 <div align="center">
   
