@@ -1,77 +1,66 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
   <defs>
-    <filter id="glow">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur" />
+    <filter id="neonGlow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+      <feFlood flood-color="#FFFFFF" flood-opacity="1" result="colorWhite" />
+      <feComposite in="colorWhite" in2="blur" operator="in" result="glowWhite" />
       <feMerge>
-        <feMergeNode in="blur" />
+        <feMergeNode in="glowWhite" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
 
     <style>
       /* SYSTEM FONTS ONLY - GitHub compatible */
-      .main-text {
-        font-family: 'Impact', 'Arial Black', sans-serif;
-        font-size: 110px;
-        fill: #FFFFFF; /* White text */
+      .neon-text {
+        font-family: 'Brush Script MT', 'Impact', 'Arial Black', sans-serif; /* Script font with Impact fallback */
+        font-size: 140px;
+        fill: #F0F8FF; /* Off-white for inner glow */
+        stroke: #FFFFFF; /* Pure white neon tube */
+        stroke-width: 3px; /* Bolder neon line */
         text-anchor: middle;
         dominant-baseline: central;
-        letter-spacing: 5px;
+        filter: url(#neonGlow); /* Apply the glow filter */
+        font-style: italic; /* Makes Impact look more script-like if Brush Script MT isn't found */
+        opacity: 1;
+        transform-origin: center center;
+        transform-box: fill-box;
+        
+        animation: neon-flicker 5s infinite alternate; /* Main flicker */
       }
       
-      .sub-text {
-        font-family: 'Consolas', 'Monaco', monospace; /* Monospace for tech feel */
-        font-size: 24px;
-        fill: #00FFFF; /* Neon Cyan */
-        text-anchor: middle;
-        letter-spacing: 8px;
-        font-weight: bold;
+      /* KEYFRAME ANIMATIONS */
+      @keyframes neon-flicker {
+        0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+          opacity: 1;
+          filter: url(#neonGlow);
+        }
+        20%, 24%, 55% {
+          opacity: 0.2; /* Dimmed state */
+          filter: none; /* No glow for dim state */
+        }
       }
 
-      /* ANIMATIONS */
-      @keyframes neon-pulse {
-        0% { stroke: #00FFFF; filter: url(#glow); stroke-width: 4; }
-        50% { stroke: #00AAFF; filter: none; stroke-width: 2; }
-        100% { stroke: #00FFFF; filter: url(#glow); stroke-width: 4; }
-      }
-      
-      @keyframes text-flicker {
-        0%, 100% { fill: #FFFFFF; }
-        5% { fill: #00FFFF; }
-        10% { fill: #FFFFFF; }
-        15% { fill: #00FFFF; }
-        20% { fill: #FFFFFF; }
+      /* Hover effect for a more interactive GitHub element */
+      .neon-group:hover .neon-text {
+        animation: none; /* Stop the flicker on hover */
+        opacity: 1; /* Keep it fully on */
+        filter: url(#neonGlow);
+        stroke-width: 4px; /* Slightly bolder on hover */
+        fill: #E0FFFF; /* Brighter inner glow */
       }
 
-      .container {
-        animation: text-flicker 8s infinite alternate; /* Slower, subtle flicker */
+      /* Background */
+      .bg-dark {
+        fill: #1A1A1A; /* Dark almost black background */
       }
-
-      .shape-border {
-        fill: none; /* No fill */
-        stroke: #00FFFF; /* Neon Cyan border */
-        stroke-width: 3;
-        filter: url(#glow);
-        animation: neon-pulse 3s infinite alternate;
-      }
-
     </style>
   </defs>
 
-  <rect width="100%" height="100%" fill="#000000" rx="10" /> 
+  <rect width="100%" height="100%" class="bg-dark" rx="10" /> 
   
-  <g transform="translate(400, 200)">
-    <path d="M-180 -80 L0 -160 L180 -80 L180 80 L0 160 L-180 80 Z" class="shape-border" />
-    
-    <g class="container">
-      <text x="0" y="0" class="main-text">GAUTHAM SALIAN</text>
-      <text x="0" y="60" class="sub-text">ERROR_404</text>
-    </g>
-
-    <line x1="-180" y1="-80" x2="180" y2="80" stroke="#333333" stroke-width="1" />
-    <line x1="180" y1="-80" x2="-180" y2="80" stroke="#333333" stroke-width="1" />
-    <line x1="0" y1="-160" x2="0" y2="160" stroke="#333333" stroke-width="1" />
-    <line x1="-180" y1="80" x2="180" y2="80" stroke="#333333" stroke-width="1" />
-
+  <g transform="translate(400, 200)" class="neon-group">
+    <text x="0" y="-40" class="neon-text">My</text>
+    <text x="0" y="60" class="neon-text">Profile</text>
   </g>
 </svg>
