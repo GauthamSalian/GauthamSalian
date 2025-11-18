@@ -1,39 +1,119 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-label="GS logo">
-<defs>
-<linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
-<stop offset="0%" stop-color="#00C4FF" />
-<stop offset="100%" stop-color="#6FE3B4" />
-</linearGradient>
-<filter id="f1" x="-20%" y="-20%" width="140%" height="140%">
-<feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0b3740" flood-opacity="0.12" />
-</filter>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="saffronGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9933;stop-opacity:1" /> <stop offset="50%" style="stop-color:#FFD700;stop-opacity:1" /> <stop offset="100%" style="stop-color:#D90429;stop-opacity:1" /> </linearGradient>
+    
+    <linearGradient id="cyberSilver" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#C0C0C0;stop-opacity:1" /> <stop offset="100%" style="stop-color:#2a2a2a;stop-opacity:1" />
+    </linearGradient>
 
+    <filter id="glitch">
+      <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="1" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" />
+    </filter>
 
-<rect width="240" height="240" rx="32" fill="#0f1720" />
+    <style>
+      /* Font settings */
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+      
+      text {
+        font-family: 'Orbitron', sans-serif;
+        text-transform: uppercase;
+        font-weight: 900;
+      }
 
+      /* Animations */
+      @keyframes pulse-shine {
+        0% { filter: drop-shadow(0 0 2px #FFD700); }
+        50% { filter: drop-shadow(0 0 10px #FF9933); }
+        100% { filter: drop-shadow(0 0 2px #FFD700); }
+      }
 
-<!-- soft glowing circle -->
-<circle cx="120" cy="80" r="48" fill="url(#g1)" opacity="0.14" />
+      @keyframes glitch-anim {
+        0% { transform: translate(0,0); }
+        20% { transform: translate(-2px, 2px); }
+        40% { transform: translate(-2px, -2px); }
+        60% { transform: translate(2px, 2px); }
+        80% { transform: translate(2px, -2px); }
+        100% { transform: translate(0,0); }
+      }
 
+      @keyframes holographic-text {
+        0% { fill: #ffffff; }
+        25% { fill: #00F0FF; } /* Cyber Cyan */
+        50% { fill: #ffffff; }
+        75% { fill: #FF0055; } /* Neon Pink */
+        100% { fill: #ffffff; }
+      }
 
-<!-- leaf + circuit motif -->
-<g transform="translate(48,48)" filter="url(#f1)">
-<path d="M72 8c-18 0-40 12-48 28-8 16 0 36 18 44 18 8 46 6 64-4 18-10 24-32 16-48-8-16-30-20-50-20z" fill="#062F2F" stroke="url(#g1)" stroke-width="3" />
-<path d="M80 36c-6 6-16 8-24 6" stroke="#9FF3E0" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.9" />
-<circle cx="86" cy="30" r="3" fill="#00C4FF" />
-</g>
+      .bg-shape {
+        fill: url(#saffronGold);
+        stroke: #FFD700;
+        stroke-width: 4;
+        animation: pulse-shine 2s infinite;
+      }
 
+      .inner-shape {
+        fill: url(#cyberSilver);
+        opacity: 0.9;
+      }
 
-<!-- Initials -->
-<g transform="translate(36,118)">
-<text x="0" y="0" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="68" fill="#E6EEF0">G</text>
-<text x="86" y="0" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="68" fill="url(#g1)">S</text>
-</g>
+      .glitch-layer {
+        animation: glitch-anim 0.3s infinite linear alternate-reverse;
+        display: none; /* Only shows on hover or random triggers if JS added, currently generic */
+      }
+      
+      /* Main Text Style */
+      .logo-text {
+        fill: #ffffff;
+        font-size: 48px;
+        text-anchor: middle;
+        dominant-baseline: middle;
+        filter: drop-shadow(3px 3px 0px #000);
+        font-style: italic;
+      }
 
+      .sub-text {
+        fill: #00F0FF;
+        font-size: 14px;
+        text-anchor: middle;
+        letter-spacing: 4px;
+        font-weight: 700;
+      }
+      
+      /* Make the text glitch occasionally */
+      .logo-group:hover .logo-text {
+        animation: glitch-anim 0.2s infinite;
+        fill: #FFD700;
+      }
 
-<!-- small tagline -->
-<text x="120" y="210" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#9FB7BD">ai · web3 · systems</text>
+      /* Circuit lines */
+      .circuit {
+        stroke: #D90429;
+        stroke-width: 2;
+        fill: none;
+        opacity: 0.6;
+      }
+    </style>
+  </defs>
 
+  <rect width="100%" height="100%" fill="#050505" rx="20" />
 
+  <g transform="translate(200, 200)" class="logo-group">
+    
+    <path d="M0 -140 L120 -40 L80 130 L-80 130 L-120 -40 Z" class="bg-shape" />
+    
+    <path d="M0 -120 L100 -35 L70 115 L-70 115 L-100 -35 Z" class="inner-shape" />
+
+    <path d="M-60 115 L-60 80 L-90 60 M60 115 L60 80 L90 60 M0 -120 L0 -80" class="circuit" />
+
+    <text x="0" y="10" class="logo-text">VIPER</text>
+    
+    <text x="0" y="50" class="sub-text">PREMIUM</text>
+
+    <path d="M-100 -35 L100 -35" stroke="rgba(255,255,255,0.2)" stroke-width="2" />
+    <path d="M-80 80 L80 80" stroke="rgba(255,255,255,0.2)" stroke-width="2" />
+
+  </g>
 </svg>
