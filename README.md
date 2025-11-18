@@ -1,6 +1,6 @@
 <!-- ------------------------------ HEADER ------------------------------ -->
 <div align="center">
-  <img src="./assets/gs_logo.svg" alt="My Profile Neon Logo" width="100%" />
+  <img src="./assets/gs_logo.svg?v=1" alt="My Profile Neon Logo" width="100%" />
 </div>
 
 
