@@ -40,6 +40,7 @@
 ## 🌐 Connect With Me  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gautham-salian-2310a9368)
 [![Email](https://img.shields.io/badge/Email-me-red?logo=gmail&logoColor=white)](mailto:gauthamsalian06@gmail.com)
+![Profile Views](https://komarev.com/ghpvc/?username=your-username&color=blue)
 
 ---
 
