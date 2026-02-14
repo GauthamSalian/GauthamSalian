@@ -143,8 +143,7 @@
 ## 📈 GitHub Stats  
 <div align="center">
   
-![Stats](https://github-readme-stats.vercel.app/api?username=gauthamsalian&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=gauthamsalian&theme=radical&layout=compact)
+![GitHub Streak](https://streak-stats.demolab.com?user=gauthamsalian&theme=radical&border_radius=10)
 
 </div>
 
