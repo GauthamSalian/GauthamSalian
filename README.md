@@ -140,15 +140,6 @@
 
 ---
 
-## 📈 GitHub Stats  
-<div align="center">
-  
-![GitHub Streak](https://streak-stats.demolab.com?user=gauthamsalian&theme=radical&border_radius=10)
-
-</div>
-
----
-
 ## 📊 Contribution Graph  
 <div align="center">
 
