@@ -140,6 +140,28 @@
 
 ---
 
+# 🎯 Leadership & Impact
+
+### 🎪 Technical Co-Head — Incridea 2026
+
+🚀 Managed technical infrastructure powering **8000+ users** and **₹50L+ registration volume**
+
+- Directed platform operations and deployment activities for NMAMIT's flagship techno-cultural festival
+- Coordinated developers and organizers to deliver registration systems, dashboards, and event workflows
+- Maintained platform reliability during high-traffic periods through monitoring, testing, and rapid issue resolution
+- Bridged technical and non-technical teams to ensure smooth event execution at scale
+
+### 🌍 ESG Innovation Intern — 1M1B
+
+🌱 Built technology solutions focused on sustainability and social impact
+
+- Developed an AI-powered ESG report analysis platform aligned with multiple UN SDGs
+- Collaborated with mentors and peers to translate sustainability challenges into actionable software solutions
+- Presented research findings, insights, and solution recommendations through reports and stakeholder demonstrations
+
+---
+
+
 ## 📊 Contribution Graph  
 <div align="center">
 
